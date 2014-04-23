@@ -1,0 +1,9 @@
+*.pdb
+*.vsix
+*.user
+*.dll
+obj/
+*.suo
+bin/
+*.vsi
+*.zip
