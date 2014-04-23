@@ -1,0 +1,2 @@
+c:\users\jonathan.vanmechelen\documents\visual studio 2013\Projects\DisposeClassSnippet\DisposeClassSnippet\bin\Debug\DisposeClassSnippet.exe.config
+C:\Users\jonathan.vanmechelen\documents\visual studio 2013\Projects\DisposeClassSnippet\DisposeClassSnippet\obj\Debug\DisposeClassSnippet.csprojResolveAssemblyReference.cache

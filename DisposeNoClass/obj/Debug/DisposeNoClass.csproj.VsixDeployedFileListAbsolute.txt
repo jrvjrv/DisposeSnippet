@@ -1,0 +1,5 @@
+C:\Users\jonathan.vanmechelen\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\JR VanMechelen\DisposeNoClass\1.0\\extension.vsixmanifest
+C:\Users\jonathan.vanmechelen\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\JR VanMechelen\DisposeNoClass\1.0\\DisposeNoClass.pkgdef
+C:\Users\jonathan.vanmechelen\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\JR VanMechelen\DisposeNoClass\1.0\Snippets\CSharp\Dispose (No Class)\\Dispose.snippet
+C:\Users\jonathan.vanmechelen\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\JR VanMechelen\DisposeNoClass\1.0\Snippets\CSharp\Dispose (No Class)\\DisposeNoClass.snippet
+C:\Users\jonathan.vanmechelen\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\JR VanMechelen\DisposeNoClass\1.0\\License.txt

@@ -1,0 +1,8 @@
+C:\Users\jonathan.vanmechelen\documents\visual studio 2013\Projects\DisposeClassSnippet\DisposeClass\bin\Debug\DisposeClass.pkgdef
+C:\Users\jonathan.vanmechelen\documents\visual studio 2013\Projects\DisposeClassSnippet\DisposeClass\bin\Debug\DisposeClass.vsix
+C:\Users\jonathan.vanmechelen\documents\visual studio 2013\Projects\DisposeClassSnippet\DisposeClass\bin\Debug\extension.vsixmanifest
+C:\Users\jonathan.vanmechelen\documents\visual studio 2013\Projects\DisposeClassSnippet\DisposeClass\obj\Debug\DisposeClass.csprojResolveAssemblyReference.cache
+C:\Users\jonathan.vanmechelen\documents\visual studio 2013\Projects\DisposeClassSnippet\DisposeClass\obj\Debug\DisposeClass.dll
+C:\Users\jonathan.vanmechelen\documents\visual studio 2013\Projects\DisposeClassSnippet\DisposeClass\obj\Debug\DisposeClass.pdb
+C:\Users\jonathan.vanmechelen\documents\visual studio 2013\Projects\DisposeClassSnippet\DisposeClass\obj\Debug\extension.vsixmanifest
+C:\Users\jonathan.vanmechelen\Documents\Visual Studio 2013\Projects\DisposeClassSnippet\DisposeClass\bin\Debug\License.txt

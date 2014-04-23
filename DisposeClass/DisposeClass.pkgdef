@@ -1,0 +1,5 @@
+﻿// -- snippets --
+
+// C#
+[$RootKey$\Languages\CodeExpansions\CSharp\Paths]
+"DisposeClass"="$PackageFolder$\Snippets\CSharp\Dispose Class"

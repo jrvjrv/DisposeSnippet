@@ -1,0 +1,30 @@
+﻿<VSContent xmlns="http://schemas.microsoft.com/developer/vscontent/2005">
+  <Content>
+    <FileName>DisposeClass.snippet</FileName>
+    <DisplayName>DisposeClass</DisplayName>
+    <Description>Two snippets: one that drops in an implementation of IDispose that uses an auxilliary class, and one that provides an implementation of that class</Description>
+
+    The IDispose implementation is available in Intellisense as "dispose".
+
+    The class implementation should probably be in the solution only once. It's available only by using right-click, insert snippet (keyboard shortcut, Ctrl-K, X), DisposeClass
+    <FileContentType>Code Snippet</FileContentType>
+    <ContentVersion>2.0</ContentVersion>
+    <Attributes>
+      <Attribute name="lang" value="CSharp"/>
+    </Attributes>
+  </Content>
+  <Content>
+    <FileName>Dispose.snippet</FileName>
+    <DisplayName>Dispose</DisplayName>
+    <Description>Two snippets: one that drops in an implementation of IDispose that uses an auxilliary class, and one that provides an implementation of that class</Description>
+
+    The IDispose implemenation is available in Intellisense as "dispose".
+
+    The class implementation should probably be in the solution only once. It's available only by using right-click, insert snippet (keyboard shortcut, Ctrl-K, X), DisposeClass
+    <FileContentType>Code Snippet</FileContentType>
+    <ContentVersion>2.0</ContentVersion>
+    <Attributes>
+      <Attribute name="lang" value="CSharp"/>
+    </Attributes>
+  </Content>
+</VSContent>

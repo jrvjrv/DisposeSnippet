@@ -1,0 +1,1 @@
+﻿Creating a .zip programmtically is such an annoyance that for now this will be done by hand. Add the .snippet files and the vscontent file to a .zip named "DisposeClass.zip", then rename the .zip to .vsi. Sorry.

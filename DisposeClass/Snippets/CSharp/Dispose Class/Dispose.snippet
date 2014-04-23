@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Dispose</Title>
+      <Description>Use on a class that implements the IDisposible interface.</Description>
+      <Shortcut>dispose</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="false">
+          <ID>classname</ID>
+          <ToolTip>Class name</ToolTip>
+          <Function>ClassName()</Function>
+          <Default>ClassNamePlaceholder</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method decl">
+        <![CDATA[
+        #region IDisposable implementation
+
+        protected virtual void DisposeManagedChildren() {
+            // dispose child CLR objects here
+        }
+
+        protected virtual void CleanUpUnmanaged() {
+            // clean up unmanaged objects here.
+        }
+
+        /// <summary>
+        /// This has to be initialized in the constructor (or constructors) as
+        /// _disposer = new Disposer(this, DisposeManaged, DisposeUnmanaged);
+        /// </summary>
+        private readonly Disposer _disposer = new Disposer();
+
+        /// <summary>
+        /// Implement IDisposable.
+        /// Do not make this method virtual.
+        /// A derived class should not be able to override this method.
+        /// </summary>
+        public void Dispose() {
+            Dispose(true);
+        }
+
+        /// <summary>
+        /// Dispose(bool disposing) executes in two distinct scenarios.
+        /// If disposing equals true, the method has been called directly
+        /// or indirectly by a user's code. Managed and unmanaged resources
+        /// can be disposed.
+        /// If disposing equals false, the method has been called by the 
+        /// runtime from inside the finalizer and you should not reference 
+        /// other managed objects. Only unmanaged resources should be cleaned up.
+        /// </summary>
+        /// <param name="disposing">true = called from IDispose; false = called from destructor</param>
+        private void Dispose(bool disposing) {
+            // Note that this is not thread safe.
+            // Another thread could start disposing the object
+            // after the managed resources are disposed,
+            // but before the disposed flag is set to true.
+            // If thread safety is necessary, it must be
+            // implemented by the client.
+            _disposer.Dispose(disposing, this, DisposeManagedChildren, CleanUpUnmanaged);
+        }
+
+        /// <summary>
+        /// Use C# destructor syntax for finalization code.
+        /// This destructor will run only if the Dispose method 
+        /// does not get called.
+        /// It gives your base class the opportunity to finalize.
+        /// Do not provide destructors in types derived from this class.
+        /// </summary>
+        ~$classname$() {
+            // Do not re-create Dispose clean-up code here.
+            // Calling Dispose(false) is optimal in terms of
+            // readability and maintainability.
+            Dispose(false);
+        }
+        #endregion
+				]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

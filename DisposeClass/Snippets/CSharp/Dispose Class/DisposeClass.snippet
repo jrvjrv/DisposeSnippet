@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Disposer Class</Title>
+			<Description>This does not have a shortcut because it should be used only once, not on every class that implements IDisposable.</Description>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp" Kind="type decl">
+                <![CDATA[
+    public class Disposer {
+
+        bool _disposed;
+
+        public void Dispose(bool disposing, object thisObject, Action disposeManaged, Action cleanUpUnmanaged) {
+            // Check to see if cleanup has already been done.
+            if (_disposed) return;
+
+            // If disposing equals true, clean up managed children
+            if (disposing) {
+                if (thisObject != null) {
+                    // Take the object off the Finalization queue
+                    // to prevent finalization code for that object
+                    // from executing a second time.
+                    GC.SuppressFinalize(thisObject);
+                }
+
+                if (disposeManaged != null) {
+                    // Dispose managed resources.
+                    disposeManaged();
+                }
+            }
+            // Release unmanaged resources. If disposing is false, 
+            // only the following code is executed.
+
+            // Note that this is not thread safe.
+            // Another thread could start disposing the object
+            // after the managed resources are disposed,
+            // but before the disposed flag is set to true.
+            // If thread safety is necessary, it must be
+            // implemented by the client.
+            if (cleanUpUnmanaged != null) {
+                cleanUpUnmanaged();
+            }
+
+            _disposed = true;
+        }
+    }
+				]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

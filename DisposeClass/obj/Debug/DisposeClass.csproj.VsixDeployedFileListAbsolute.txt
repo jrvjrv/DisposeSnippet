@@ -1,0 +1,5 @@
+C:\Users\jonathan.vanmechelen\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\JR VanMechelen\DisposeClass\1.0\\extension.vsixmanifest
+C:\Users\jonathan.vanmechelen\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\JR VanMechelen\DisposeClass\1.0\\DisposeClass.pkgdef
+C:\Users\jonathan.vanmechelen\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\JR VanMechelen\DisposeClass\1.0\Snippets\CSharp\Dispose Class\\Dispose.snippet
+C:\Users\jonathan.vanmechelen\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\JR VanMechelen\DisposeClass\1.0\Snippets\CSharp\Dispose Class\\DisposeClass.snippet
+C:\Users\jonathan.vanmechelen\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\JR VanMechelen\DisposeClass\1.0\\License.txt
